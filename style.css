@@ -8,7 +8,7 @@ main{
 header{
   background-color: #fafafa;
   height:50px;
-  width: 900px;
+  width: 100%;
 }
 section{
   border-style: 0;
@@ -27,9 +27,10 @@ aside{
     border-style: 0;
     color: #262626;
     width:454px;
-    height: 628px;
+    height: 700px;
     float: right;
     background-color: #fafafa;
+
 }
 .logo{
   width:48%;
@@ -136,20 +137,19 @@ p{
 }
 .appstore{
   width: 400px;
-  margin: 0 auto;
+  margin: 10px auto;
+  position: relative;
 
 }
 footer{
   background-color: #fafafa;
-  order: 5;
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
   padding: 0 20px;
-  max-width: 1200px;
+  clear:both;
+  
+
 }
-.footer{
-  width: 900px;
+ .footer{
+  width: 100%;
   padding: 30px 0;
   font-size: 12px
   font-weight:600;
@@ -164,8 +164,7 @@ nav{
   font-size: 11px;
   justify-content: space-between;
   align-items: stretch;
-  display: flex;
-  width: 700px;
+  display: inline-block;
   max-width: 100%;
   margin: 0;
   padding: 0;
@@ -177,4 +176,30 @@ a{
   display: inline-block;
   margin-bottom: 7px;
   margin-right: 16px;
+}
+
+@media screen and (max-width: 600px) {
+
+
+  section{
+    display: none;
+  }
+  aside {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+  }
+  main{
+    width: 100%;
+  }
+
+  .footer{
+    width: 100%;
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+  }
+
 }
